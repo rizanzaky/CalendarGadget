@@ -1,5 +1,11 @@
 body {
-    font-family: 'tahoma';
+    font-family: 'calibri';
+    font-size: 12px;
+    width: 155px;
+}
+#nav-head-text {
+    font-size: 16px;
+    font-weight: bold;
 }
 .nav-bar > ul {
     list-style-type: none;
@@ -12,14 +18,54 @@ body {
 }
 .nav-bar .nav-left {
     float: left;
+    margin-left: 3px;
 }
 .nav-bar .nav-right {
     float: right;
+    margin-right: 3px;
 }
-.nav-bar > ul > li > a {
+.days-table tbody tr {
+    height: 20px;
 }
 table {
     width: 100%;
     table-layout: fixed;
     text-align: center;
+}
+.special-day {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid;
+    text-align: center;
+}
+.days-table tbody tr td {
+    padding: 0px;
+    margin: 0px;
+}
+.colour-gray {
+    border-color: #666;
+}
+.colour-yellow {
+    border-color: #CCCC00;
+}
+.colour-orange {
+    border-color: #EE9A00;
+}
+.colour-green {
+    border-color: #008B00;
+}
+.colour-red {
+    border-color: #B0171F;
+}
+.colour-purple {
+    border-color: #5C246E;
+}
+.colour-other {
+    border-color: #5B90F6;
+}
+.sun-0 {
+    color: #CC1100;
 }
