@@ -1,28 +1,14 @@
 body {
     font-family: 'calibri';
     font-size: 12px;
-    width: 155px;
+    width: 170px;
+    height: 155px;
+    margin: 0px;
+    padding: 0px;
 }
 #nav-head-text {
     font-size: 16px;
     font-weight: bold;
-}
-.nav-bar > ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-.nav-bar > ul > li {
-    display:inline-block;
-}
-.nav-bar .nav-left {
-    float: left;
-    margin-left: 3px;
-}
-.nav-bar .nav-right {
-    float: right;
-    margin-right: 3px;
 }
 .days-table tbody tr {
     height: 20px;
@@ -68,4 +54,24 @@ table {
 }
 .sun-0 {
     color: #CC1100;
+}
+.days-table {
+    /*border-top: 1px solid #170000;*/
+}
+.row {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*border: 1px solid #170000;*/
+    display: block;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-left, .col-right {width: 20%;}
+.col-middle {width: 60%;}
+[class*="col-"] {
+    float: left;
 }

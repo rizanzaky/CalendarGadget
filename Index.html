@@ -12,13 +12,12 @@
 	<body>
 		<!-- Content -->
 		<div class="content">
+			<div id="debugger"></div>
 			<!-- Header navigation bar for days -->
-			<div class="nav-bar">
-				<ul>
-					<li class="nav-left"><a id="navigate-left" data-prev-month=""><span><img src="./resources/imgs/arrow-left.png" /></span></a></li>
-					<li class="nav-middle"><span id="nav-head-text" data-this-month=""></span></li>
-					<li class="nav-right"><a id="navigate-right" data-next-month=""><span><img src="./resources/imgs/arrow-right.png" /></span></a></li>
-				</ul>
+			<div class="row">
+				<div class="col-left"><a id="navigate-left" data-prev-month=""><span><img src="./resources/imgs/arrow-left.png" /></span></a></div>
+				<div class="col-middle"><span id="nav-head-text" data-this-month=""></span></div>
+				<div class="col-right"><a id="navigate-right" data-next-month=""><span><img src="./resources/imgs/arrow-right.png" /></span></a></div>
 			</div>
 
 			<!-- The days view for calendar -->

@@ -26,6 +26,7 @@ $(document).ready(function() {
     initializeMonth(today, leaves);
 
     $("#navigate-left").on("click", function() {
+    // $(".nav-left").on("click", function() {
         if ($(this).data("prev-month") >= 0) {
             var newDate = $("#nav-head-text").data("this-month");
             var leaves = leaveList[newDate.getMonth() - 1].sort(SortById);
@@ -34,6 +35,7 @@ $(document).ready(function() {
     });
 
     $("#navigate-right").on("click", function() {
+    // $(".nav-right").on("click", function() {
         if ($(this).data("next-month") <= 11) {
             var newDate = $("#nav-head-text").data("this-month");
             var leaves = leaveList[newDate.getMonth() + 1].sort(SortById);
@@ -64,16 +66,17 @@ function initializeMonth (date, leaves) {
     var dayOneIdx = firstDayIndex;
 
     $("#calendar-body").empty(); // clear calendar body
-
     while(dayIter <= daysInMonth) {
+        // $("#debugger").append("c:" + count + ",\n");
         var week = "<tr>";
+
         for (var i = 0; i <= 6; i++) {
+            // $("#debugger").append("i:" + i + ", ");
             if (foundFirst || dayOneIdx == i) {
                 // leaves check
                 if (numOfLvs < leaves.length && leaves[numOfLvs].id == dayIter) {
                     // add day;
                     week += "<td class='special-day colour-"+leaves[numOfLvs].colour+" sun-"+ i +"'>"+dayIter+"</td>";
-                    console.log(leaves[numOfLvs].text);
                     numOfLvs++;
                 } else {
                     // add day;
