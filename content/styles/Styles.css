@@ -1,0 +1,25 @@
+body {
+    font-family: 'tahoma';
+}
+.nav-bar > ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar > ul > li {
+    display:inline-block;
+}
+.nav-bar .nav-left {
+    float: left;
+}
+.nav-bar .nav-right {
+    float: right;
+}
+.nav-bar > ul > li > a {
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
