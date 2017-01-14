@@ -1,8 +1,8 @@
 body {
     font-family: 'calibri';
     font-size: 12px;
-    width: 170px;
-    height: 155px;
+    width: 155px;
+    height: 160px;
     margin: 0px;
     padding: 0px;
 }
@@ -27,30 +27,39 @@ table {
     border: 2px solid;
     text-align: center;
 }
+.current-day {
+    background-color: #0099CC;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
 .days-table tbody tr td {
     padding: 0px;
     margin: 0px;
 }
 .colour-gray {
-    border-color: #666;
+    border: 2px solid #666 !important;
 }
 .colour-yellow {
-    border-color: #CCCC00;
+    border: 2px solid #CCCC00 !important;
 }
 .colour-orange {
-    border-color: #EE9A00;
+    border: 2px solid #EE9A00 !important;
 }
 .colour-green {
-    border-color: #008B00;
+    border: 2px solid #008B00 !important;
 }
 .colour-red {
-    border-color: #B0171F;
+    border: 2px solid #B0171F !important;
 }
 .colour-purple {
-    border-color: #5C246E;
+    border: 2px solid #5C246E !important;
 }
 .colour-other {
-    border-color: #5B90F6;
+    border: 2px solid #5B90F6 !important;
 }
 .sun-0 {
     color: #CC1100;
@@ -74,4 +83,20 @@ table {
 .col-middle {width: 60%;}
 [class*="col-"] {
     float: left;
+}
+.leave-types {
+    font-size: 8px;
+    display: block;
+}
+i[red] {
+    color: #d20915;
+    font-size: 10px;
+}
+i[yellow] {
+    color: #ffff00;
+    font-size: 10px;
+}
+i[blue] {
+    color: #4269ff;
+    font-size: 10px;
 }
