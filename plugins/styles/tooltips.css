@@ -2,7 +2,7 @@
     position: relative;
     border-bottom: 1px dotted #050505;
     cursor: pointer;
-    color: #006080;
+    /*color: #006080;*/
 }
 .tooltip .tooltiptext {
     visibility: hidden;

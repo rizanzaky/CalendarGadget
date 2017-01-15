@@ -63,9 +63,9 @@ function initializeMonth (date, leaves) {
     var dayOneIdx = firstDayIndex;
 
     $("#calendar-body").empty(); // clear calendar body
-    while(dayIter <= daysInMonth) {
+    for (var j = 0; j <= 4; j++) {
         // $("#debugger").append("c:" + count + ",\n");
-        var week = "<tr>";
+        var week = "<tr id='cal-row-"+j+"'>";
 
         for (var i = 0; i <= 6; i++) {
             // $("#debugger").append("i:" + i + ", ");
@@ -93,7 +93,7 @@ function initializeMonth (date, leaves) {
                 dayIter++;
             } else {
                 // add blank
-                week += "<td></td>";
+                week += "<td class='sun-"+ i +"'></td>";
             }
             if (dayIter > daysInMonth)
                 foundFirst = false; // stop adding days
@@ -102,6 +102,14 @@ function initializeMonth (date, leaves) {
         week += "</tr>";
 
         $("#calendar-body").append(week);
+
+        // fix for missing 6th row
+        if (j == 4 && dayIter <= daysInMonth) {
+            var addPos = 1;
+            for (var z = dayIter; z <= daysInMonth; z++) {
+                $("#cal-row-0 td:nth-child("+(addPos++)+")").text(z);
+            }
+        }
     }
 }
 
